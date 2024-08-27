@@ -1,0 +1,57 @@
+/* src/components/DateRangePicker.css */
+.date-range-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .day {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .empty {
+    visibility: hidden;
+  }
+  
+  .weekend {
+    color: red;
+    pointer-events: none;
+  }
+  
+  .selected {
+    background-color: blue;
+    color: white;
+  }
+  
+  .in-range {
+    background-color: lightblue;
+    color: black;
+  }
+  
+  .predefined-ranges button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .active-predefined-range{
+    background-color: lightblue;
+    border: 0.5px solid black;
+  }
